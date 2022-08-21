@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+    <!-- 
+        /login rotasında render işlemlerinde aşağıdaki yapı çalışır
+     -->
+    <table border="1">
+        <form action="/login" method="POST"> <!-- buton tıklandığında post işlemi gerçekleşir -->
+            <tr>
+                <th colspan="2">
+                    Login
+                </th>
+            </tr>
+            <% if (hata) { %> <!-- login işleminde bir hata alınırsa burası çalışır  -->
+                
+                <tr class="alert"> <!-- hata mesajları için alert class ı kullanılır -->
+                    <td colspan="2">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        <strong>
+                            <%- hata %> 
+                        </strong>
+                      </td>
+                </tr>
+                <% } %>
+                <% if (basarili) { %> <!-- login işlemi başarılıysa burası çalışır -->
+                    <tr class="alert2"> <!-- başarılı mesajlar için alert2 sınıfı kullanılır -->
+                        <td colspan="2">
+                            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                            <strong>
+                                <%- basarili %> 
+                            </strong>
+                          </td>
+                    </tr>
+                    <% } %>
+            <% if (!basarili) { %> <!-- login işlemi başarılı olmadığı sürece email ve şifre bilgisi istenilecek -->
+                <tr>
+                    <td>
+                        <label for="">Email girin:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" value="<%- typeof email !== 'undefined' ? email : '' %>" id="" placeholder="example@gmail.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Sifre girin:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="sifre" id="" placeholder="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit">Giriş Yap</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="/register">Kayıt Ol ? </a>
+                    </td>
+                    <td>
+                        <a href="/forget">Parolamı Unuttum?</a>
+                    </td>
+                </tr>
+            <% } %>
+
+            <% if (basarili) { %> <!-- login işlemi başarılı olursa email ve sifre kısmı artık görünmeyecek -->
+                <tr>
+                    <td colspan="2">
+                        <h1> <%= isim %> </h1> hoşgeldiniz.
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="onlyhere">
+                        
+                        <a href="/login" ><button type="button">Çıkış Yap</button></a> <!-- Çıkış işlemi gerçekleştiren buton -->
+                    </td>
+                </tr>
+            <% } %>
+        </form>
+    </table>
+
+</body>
+</html>

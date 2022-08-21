@@ -1,0 +1,93 @@
+
+body{
+    background-color: aqua;
+}
+
+table {
+    text-align: center;
+    margin: auto;
+    margin-top: 150px;
+    border-collapse: collapse;
+    border-radius: 15px;
+    background-color: rgb(98, 67, 236);
+}
+
+td {
+    padding: 20px;
+}
+
+th {
+    font-size: xx-large;
+    padding: 15px;
+}
+
+button {
+
+    background-color: #ff9778;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+button:hover{
+    opacity: 1
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    border-radius: 5%;
+}
+
+a {
+    text-decoration: none;
+    background-color: rgb(20, 201, 99);
+    font-weight: bold;
+}
+
+.onlyhere a {
+    background-color: #ff9778;
+}
+
+a:hover{
+    background-color: rgb(255, 238, 0);
+    font-size: 20px;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: rgb(59, 59, 59);
+}
+
+.alert2 {
+    padding: 20px;
+    background-color: #0dff00;
+    color: rgb(0, 0, 0);
+}
+  
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+.closebtn:hover {
+    color: black;
+}

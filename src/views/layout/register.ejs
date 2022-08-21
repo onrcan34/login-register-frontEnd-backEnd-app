@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+    <!-- 
+        /register rotasında render işlemlerinde aşağıdaki yapı çalışır
+     -->
+    <table border="1">
+        <form action="/register" method="POST"> <!-- buton tıklandığında post işlemi gerçekleşir -->
+            <tr>
+                <th colspan="2">
+                    Register
+                </th>
+            </tr>
+            <% if (hata) { %> <!-- login işleminde bir hata alınırsa burası çalışır  -->
+                <% for( let key in hata) { %> <!-- Hata sayısı 1 den fazla ise for döngüsü ile teker teker ekrana yansılıtılır -->
+                    <tr class="alert">
+                        <td colspan="2">
+                            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                            <strong>
+                                <%- key %> <%- hata[key] %> 
+                            </strong>
+                          </td>
+                    </tr>
+                <% } %>
+            <% } %>
+            <% if (basarili) { %> <!-- register işlemi başarılıysa burası çalışır -->
+                <tr class="alert2">
+                    <td colspan="2">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        <strong>
+                            <%- basarili %> 
+                        </strong>
+                      </td>
+                </tr>
+                <% } %>
+
+                <% if (dubErr.code === 11000) { %> <!-- register işleminde girilen email bilgisi daha önce başka bir kullanıcı tarafından kullanılmışsa hata mesajı yansıtılır -->
+                    <tr class="alert">
+                        <td colspan="2">
+                            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                            <strong>
+                                <p>
+                                    Bu mail kullanımda
+                                </p>
+                            </strong>
+                          </td>
+                    </tr>
+                    <% } %>
+            <tr>
+                <td style="border: red;">
+                    <label for="">İsim girin:</label>
+                </td>
+                <td>
+                    <input type="text" name="isim" value="<%- typeof isim !== 'undefined' ? isim : '' %>" id="" placeholder="name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Email girin::</label>
+                </td>
+                <td>
+                    <input type="email" name="email" value="<%- typeof email !== 'undefined' ? email : '' %>" id="" placeholder="example@gmail.com">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Sifre girin:</label>
+                </td>
+                <td>
+                    <input type="password" name="sifre" id="" placeholder="password">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Kayit Ol</button> <!-- Post işlemimini gerçekleştiren buton -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="/login">Hesabım var? Giriş Yap</a>
+                </td>
+                <td>
+                    <a href="/forget">Parolamı Unuttum?</a>
+                </td>
+            </tr>
+        </form>
+    </table>
+
+</body>
+</html>

@@ -78,7 +78,7 @@ tanımlı değil.
 ![image](https://user-images.githubusercontent.com/64845818/185813567-76609480-3650-4ae2-a88e-d1104fb997ca.png)
 
 ```
-npm i -g nodemon ile nodemon paketi nodejs e glbal olarak (her dizinden ulaşılabilecek) şekilde eklenir.
+npm i -g nodemon ile nodemon paketi nodejs e global (her dizinden ulaşılabilecek) olarak eklenir.
 ```
 
 ![image](https://user-images.githubusercontent.com/64845818/185813659-cec38ae6-dde2-4c28-839e-c7a4a7c292a3.png)

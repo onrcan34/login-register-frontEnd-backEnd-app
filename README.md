@@ -29,8 +29,10 @@ git clone https://github.com/onrcan34/login-register-frontEnd-backEnd-app.git
 Bu hatayı alıyorsanız, ya git bilgisarınızda kurulu değildir ya da bilgisayarınız git dizin yolunu bulamıyor.
 Öncelikle git bilgisayarınızda var mı diye kontrol edin yoksa  https://git-scm.com/download/win adresinden 
 git progamını indirip kurulumunu yapın. Daha sonra bilgisayara git dizinini tanıtmak için 
-https://www.youtube.com/watch?v=v3RCp26naoI adresinden gerekli ayarlamayı yapın. 
+aşağıdaki link ile gerekli ayarlamayı yapın. 
 ```
+https://www.youtube.com/watch?v=v3RCp26naoI
+
 ![image](https://user-images.githubusercontent.com/64845818/185812974-9b9310f7-2210-4840-a0fd-50f4a3e847ff.png)
 
 
@@ -63,7 +65,7 @@ veritabanını ve onun "users" isminde bir collection nunu oluşturur.
 ```
 mongoDB Compass veritabanı gösterimi 
 ```
-![p0_Send](https://user-images.githubusercontent.com/64845818/183240884-3d736014-70f6-47c4-902f-93d6753caee1.png)
+![1](https://user-images.githubusercontent.com/64845818/185814677-1e4db530-1f4d-4f18-9240-7b9db9cbd643.PNG)
 
 
 ### 'nodemon' is not recognized hatası için
@@ -85,13 +87,13 @@ npm i -g nodemon ile nodemon paketi nodejs e glbal olarak (her dizinden ulaşıl
 localhost:3000/register şeklinde sunucuya get isteği yapıldığında "Register" sayfası görüntülenir. Kullanıcı
 bu sayfada yeni bir hesap oluşturabilir. 
 ```
-![p1_Send](https://user-images.githubusercontent.com/64845818/183239143-9ff8cebd-8baf-4a20-b885-b96eb1597ac1.png)
+![2](https://user-images.githubusercontent.com/64845818/185814693-0d4a2b56-aab1-44fb-8bb0-f373c8968f45.PNG)
 
 ```
 Register işleminde kullanıcı girdilerinden dolayı herhangi bir hata oluşursa mesaj şeklinde ekrana yansıtılır
 ```
 
-![p1_Send](https://user-images.githubusercontent.com/64845818/183239143-9ff8cebd-8baf-4a20-b885-b96eb1597ac1.png)
+![3](https://user-images.githubusercontent.com/64845818/185814699-e3a83d97-f5b2-48bb-97c6-3ef76e976933.PNG)
 
 
 ### localhost:3000/login get isteğinde bulunmak
@@ -99,13 +101,13 @@ Register işleminde kullanıcı girdilerinden dolayı herhangi bir hata oluşurs
 localhost:3000/login şeklinde sunucuya get isteği yapıldığında "Login" sayfası görüntülenir. Kullanıcı
 register sayfasında oluşturduğu hesap bilgileri ile login sayfasında giriş işlemi gerçekleştirebilir.
 ```
-![p2_Send](https://user-images.githubusercontent.com/64845818/183239750-18cf1eed-c3b2-4d3f-993d-5670b2c20e17.png)
+![4](https://user-images.githubusercontent.com/64845818/185814724-5abcf1b6-88d0-45aa-afeb-4ba2fa3833c9.PNG)
 
 ```
 Başarılı bir giriş işleminde sayfa aşağıdaki gibi görüntülenir
 ```
 
-![p2_Send](https://user-images.githubusercontent.com/64845818/183239750-18cf1eed-c3b2-4d3f-993d-5670b2c20e17.png)
+![5](https://user-images.githubusercontent.com/64845818/185814729-1f95bb74-a473-4210-9615-4178d33e16de.PNG)
 
 
 ### localhost:3000/forget get isteğinde bulunmak
@@ -113,13 +115,13 @@ Başarılı bir giriş işleminde sayfa aşağıdaki gibi görüntülenir
 localhost:3000/forget şeklinde sunucuya get isteği yapıldığında "Reset Password" sayfası görüntülenir. 
 Kullanıcı bu sayfada, daha önceden oluşturduğu hesabının parolasını değiştirebilir.
 ```
-![p3_Send](https://user-images.githubusercontent.com/64845818/183239761-1d926825-b027-44d5-8bbf-353d01744008.png)
+![6](https://user-images.githubusercontent.com/64845818/185814735-0cd6ae5d-040b-45c8-9008-03ea5075e5c5.PNG)
 
 ```
 Başarısız bir parola değiştirme işleminde sayfa aşağıdaki gibi görüntülenir.
 ```
 
-![p3_Send](https://user-images.githubusercontent.com/64845818/183239761-1d926825-b027-44d5-8bbf-353d01744008.png)
+![7](https://user-images.githubusercontent.com/64845818/185814742-09420dc5-d5f5-42d5-a91c-95f0cc0a8b4f.PNG)
 
 
 ### localhost:3000/ get isteğinde bulunmak
@@ -132,7 +134,7 @@ NOTE!
 Tarayıcıda json çıktıların aşağıdaki gibi görünmesi için json formatter eklentisini indirebilirsiniz.
 ```
 
-![p4_Send](https://user-images.githubusercontent.com/64845818/183241584-ed2a3695-f255-4b08-b0e9-ddb3ea13a706.png)
+![8](https://user-images.githubusercontent.com/64845818/185814748-68c2978f-0f11-406e-8d07-9f60f9a8a614.PNG)
 
 
 

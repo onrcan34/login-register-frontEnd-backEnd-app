@@ -6,7 +6,8 @@ Bu proje nodeJS kullanılarak geliştirmiştir. Projede kullanılan npm paketler
 Proje npm start komutu ile başlatıldığında, ilk olarak express sunucusu oluşur ve mongoose veritabanı bağlantısı gerçekleşir. newdb isminde veritabanı ve users isminde collection oluşur. Tarayıcı ile localhost:3000 adresi üzerinden /register, /login ve /forget sayfalarına ulaşılabilir. Bu istekler dışında yapılan tüm localhost:3000 istekleri "Geçersiz Rota" olarak algılanır. localhost:3000/register sayfasında kullanıcı kayıt işlemleri, localhost:3000/login sayfasında kullanıcı giriş işlemleri ve localhost:3000/forget sayfasında parola sıfırlama işlemi yapılır. Tüm bu işlemler yapılırken oluşabilecek tüm hatalar ele alınmıştır. Başarılı veya başarısız tüm işlemler ekrana mesaj olarak yansıtılmıştır.  
 ```
 NOT!!!
-Bu proje ile veriler mongoose driver sayesinde MongoDB veritabanında tutulur. Böylelikle uygulama yeniden başlatıldığında veriler kaybolmaz
+Bu proje ile veriler mongoose driver sayesinde MongoDB veritabanında tutulur. Böylelikle uygulama 
+yeniden başlatıldığında veriler kaybolmaz
 ```
 
 # Prerequisites - Gereklilikler
@@ -26,9 +27,9 @@ git clone https://github.com/onrcan34/login-register-frontEnd-backEnd-app.git
 
 ### 'git' is not recognized hatası
 ```
-Bu hatayı alıyorsanız, ya git bilgisarınızda kurulu değildir ya da bilgisayarınız git dizin yolunu bulamıyor.
-Öncelikle git bilgisayarınızda var mı diye kontrol edin yoksa  https://git-scm.com/download/win adresinden 
-git progamını indirip kurulumunu yapın. Daha sonra bilgisayara git dizinini tanıtmak için 
+Bu hatayı alıyorsanız, ya git bilgisarınızda kurulu değildir ya da bilgisayarınız git dizin yolunu 
+bulamıyor. Öncelikle git bilgisayarınızda var mı diye kontrol edin yoksa  https://git-scm.com/download/win 
+adresinden git progamını indirip kurulumunu yapın. Daha sonra bilgisayara git dizinini tanıtmak için 
 aşağıdaki link ile gerekli ayarlamayı yapın. 
 ```
 https://www.youtube.com/watch?v=v3RCp26naoI
@@ -70,7 +71,8 @@ mongoDB Compass veritabanı gösterimi
 
 ### 'nodemon' is not recognized hatası için
 ```
-Bu hata, nodejs projeyi çalıştırmak için nodemon paketini bulamıyor. Çünkü böyle bir paket nodejs de tanımlı değil.
+Bu hata, nodejs projeyi çalıştırmak için nodemon paketini bulamıyor. Çünkü böyle bir paket nodejs de 
+tanımlı değil.
 ```
 
 ![image](https://user-images.githubusercontent.com/64845818/185813567-76609480-3650-4ae2-a88e-d1104fb997ca.png)
@@ -84,13 +86,15 @@ npm i -g nodemon ile nodemon paketi nodejs e glbal olarak (her dizinden ulaşıl
 
 ### localhost:3000/register get isteğinde bulunmak
 ```
-localhost:3000/register şeklinde sunucuya get isteği yapıldığında "Register" sayfası görüntülenir. Kullanıcı
-bu sayfada yeni bir hesap oluşturabilir. 
+localhost:3000/register şeklinde sunucuya get isteği yapıldığında "Register" sayfası görüntülenir. 
+Kullanıcı bu sayfada yeni bir hesap oluşturabilir.
+ 
 ```
 ![2](https://user-images.githubusercontent.com/64845818/185814693-0d4a2b56-aab1-44fb-8bb0-f373c8968f45.PNG)
 
 ```
-Register işleminde kullanıcı girdilerinden dolayı herhangi bir hata oluşursa mesaj şeklinde ekrana yansıtılır
+Register işleminde kullanıcı girdilerinden dolayı herhangi bir hata oluşursa mesaj şeklinde ekrana 
+yansıtılır.
 ```
 
 ![3](https://user-images.githubusercontent.com/64845818/185814699-e3a83d97-f5b2-48bb-97c6-3ef76e976933.PNG)

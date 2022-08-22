@@ -14,7 +14,8 @@ yeniden başlatıldığında veriler kaybolmaz
 | Gerekli Paket ve Modüller | İndirme İşlemi |
 | ------ | ------ |
 | node module | https://nodejs.org/en/download/ |
-| mongodb | https://www.mongodb.com/try/download/community |
+| mongoDB | https://www.mongodb.com/try/download/community |
+| mongoDBCompass | https://www.mongodb.com/try/download/compass |
 | all npm packages | npm install |
 
 # Installing - Kurulum
